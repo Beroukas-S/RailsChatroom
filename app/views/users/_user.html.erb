@@ -1,0 +1,8 @@
+<% if @single_room && @single_room.participant?(@single_room, user) %>
+  <% isActive = 'active' %>
+<% else %>
+  <% isActive = '' %>
+<% end %>
+<div>
+  <%= link_to user.full_name, user %>
+</div>

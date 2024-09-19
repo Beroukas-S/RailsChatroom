@@ -1,0 +1,25 @@
+<%= render @post %>
+<h5>
+<%= @post.title %>
+</h5>
+   <br>
+  <table class="table-light table-bordered">
+    <tbody>
+    <th> <%= @post.text %>  </th>
+  </tbody>
+  </table>
+   <br>
+<div>
+  <%= link_to "Edit this post", edit_post_path(@post), class:"btn btn-dark"  %>     
+  <%= link_to "Back to posts", posts_path ,class:"btn btn-dark"  %>
+</div>
+</br>
+<div>
+  <%= button_to "Destroy this post", @post, method: :delete, class:"btn btn-danger"  %>
+</div>
+
+
+
+   
+
+   
