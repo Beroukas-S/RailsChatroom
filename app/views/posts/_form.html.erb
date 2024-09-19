@@ -14,10 +14,12 @@
      <%= form.label :title, "Title:" %>
      <%= form.text_field :title %>
 
+   </br>
+
      <%= form.label :text, "Text:" %>
-     <%= form.text_area :text %>
+     <%= form.text_area :text, size: "60x7" %>
 
      <div class="actions">
-       <%= form.submit %>
+       <%= form.submit "Create Post", class:'btn btn-dark'  %>
      </div>
    <% end %>

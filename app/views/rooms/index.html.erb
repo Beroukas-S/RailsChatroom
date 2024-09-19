@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <div id="chatroom_container" class="row bg-dark text-light">
   <div id="side_panel" class="col-md-4 col-sm-4">
 	<h5> <%= current_user.full_name %> </h5>
@@ -6,7 +5,6 @@
 	<%= turbo_stream_from "users" %>
     <div id="users">
       <%= render @users %>
-      <%= render plain: "OK" %>
       <br/>
     </div>
 	<h4> Rooms </h4>
